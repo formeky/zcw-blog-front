@@ -1,24 +1,20 @@
 # zcw-blog-front
-
-## Project setup
+>这是我的博客前端页面，由 https://gitee.com/fengziy/Fblog 开源项目改造而来
+> 
+> 博客后端代码仓库为 https://github.com/formeky/zcwBlog1.0
+## 下载依赖
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+npm install
 ```
 
-### Compiles and minifies for production
+### 启动项目
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+npm run serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 打包编译
+```
+npm run build
+```
+
+
