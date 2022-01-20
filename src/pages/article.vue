@@ -62,7 +62,8 @@ export default {
   methods: {
     getEssay(id) {
       axios.get(
-          'http://sherry.formeky.xyz:8091/essay?essayId='+id
+          // 'http://sherry.formeky.xyz:8091/essay?essayId='+id
+          'http://localhost:8080/essay?essayId='+id
       ).then(
           response => {
             this.essay = response.data.data

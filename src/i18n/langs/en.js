@@ -1,6 +1,7 @@
 module.exports = {
     header: {
         home: 'Home',
+        admin: 'Gargantua',
         archive: 'Archive',
         about: 'About',
         language: 'Language',
@@ -8,7 +9,8 @@ module.exports = {
         english: 'English'
     },
     home: {
-        readMore: 'READ MORE'
+        readMore: 'READ MORE',
+        edit: 'edit'
     },
     tag: {
         tag: 'TAGS'

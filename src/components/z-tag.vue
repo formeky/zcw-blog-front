@@ -31,7 +31,8 @@ export default {
     },
     tagList(){
       axios.get(
-          'http://sherry.formeky.xyz:8091/tag'
+          // 'http://sherry.formeky.xyz:8091/tag'
+          'http://localhost:8080/tag'
       ).then(
           response => {
             console.log(response.data.data)

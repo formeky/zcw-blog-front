@@ -1,6 +1,7 @@
 module.exports = {
     header: {
         home: '首页',
+        admin: '卡冈图雅',
         archive: '归档',
         about: '关于',
         language: '语言',
@@ -8,7 +9,8 @@ module.exports = {
         english: 'English'
     },
     home: {
-        readMore: '阅读全文'
+        readMore: '阅读全文',
+        edit: '修改'
     },
     tag: {
         tag: '标签'

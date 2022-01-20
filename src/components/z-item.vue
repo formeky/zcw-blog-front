@@ -32,6 +32,7 @@
               }
             }" tag="span">
               <el-button plain>{{ $t('home.readMore') }}</el-button>
+                <el-button v-if="isAdmin" plain>{{ $t('home.edit') }}</el-button>
             </router-link>
             <div class="view"><i class="el-icon-view"></i>{{ view }}</div>
           </div>
@@ -45,7 +46,7 @@
 <script>
 export default {
   name: "z-item",
-  props: ['title', 'date', 'briefIntroduction', 'view', 'tag', 'id']
+  props: ['title', 'date', 'briefIntroduction', 'view', 'tag', 'id','isAdmin']
 }
 </script>
 

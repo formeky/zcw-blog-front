@@ -9,6 +9,7 @@ import i18n from './i18n/i18n'
 import './assets/style.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
+import axios from "axios";
 
 
 Vue.config.productionTip = false
@@ -16,6 +17,7 @@ Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.component("z-header",zHeader)
 Vue.component("z-footer",zFooter)
+axios.defaults.withCredentials = true;
 
 const router =new VueRouter({
   routes,

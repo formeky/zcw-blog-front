@@ -3,6 +3,8 @@ import about from './pages/about'
 import essay from './pages/article'
 import archive from './pages/archive'
 import apply from './pages/apply'
+import admin from "./pages/admin";
+import login from "@/pages/login";
 
 const routes = [
 {
@@ -42,6 +44,16 @@ const routes = [
 {
     path:'*',
     redirect:'/'
+},
+{
+    path: '/admin',
+    name: 'admin',
+    component: admin
+},
+{
+    path: '/login',
+    name: 'login',
+    component: login
 }
 ]
 export default routes;

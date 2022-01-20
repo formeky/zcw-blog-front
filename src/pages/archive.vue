@@ -20,7 +20,6 @@
 
 <script>
 import axios from "axios";
-
 export default {
   name: 'archive',
   created() {
@@ -37,7 +36,8 @@ export default {
     },
     archive() {
       axios.get(
-          'http://sherry.formeky.xyz:8091/archive'
+          // 'http://sherry.formeky.xyz:8091/archive'
+          'http://localhost:8080/archive'
       ).then(
           response => {
             console.log(response.data.data)
@@ -55,12 +55,10 @@ export default {
 .line-item {
   display: inline-block;
 }
-
 .line-item:hover {
   cursor: pointer;
   color: #80b2f5;
 }
-
 .count {
   margin-bottom: 20px;
   font-size: 20px;

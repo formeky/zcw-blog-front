@@ -3,7 +3,7 @@
     <el-row id="artList" type="flex" justify="space-around">
       <el-col :span="16">
         <div v-for="item in essayList" :key="item.id">
-          <z-item v-bind="item"></z-item>
+          <z-item v-bind="item" :is-admin=false></z-item>
         </div>
 
 
@@ -40,6 +40,7 @@ export default {
   },
   created() {
     this.listEssay()
+    // this.corsTest()
   },
   data() {
     return {
@@ -49,7 +50,19 @@ export default {
   methods: {
     listEssay() {
       axios.get(
-          'http://sherry.formeky.xyz:8091/essayList?page=1&rows=10'
+          // 'http://sherry.formeky.xyz:8091/essayList?page=1&rows=10'
+          'http://localhost:8080/essayList?page=1&rows=10'
+      ).then(
+          response => {
+            this.essayList = response.data.data
+          }, error => {
+            console.log(error.message)
+          }
+      )
+    },
+    corsTest(){
+      axios.get(
+          'http://222.196.35.21:9011/search/v1/techCategory'
       ).then(
           response => {
             this.essayList = response.data.data
